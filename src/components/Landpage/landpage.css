@@ -153,4 +153,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     .floating-container-img2{
       left: -10px;
     }
+    .landpage-img-container .phone{
+      width: 90%;
+      object-fit: contain;
+    }
   }
