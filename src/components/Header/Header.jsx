@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 const Header = () => {
+    const [showModal, setShowModal] = useState(false)
     const [bgColor, setBgColor] = useState(false)
     const changeOnScroll = ()=>{
         if(window.scrollY >= 90){
@@ -21,11 +22,11 @@ const Header = () => {
         initial={{ opacity:0}}
         animate={{opacity:1}}
         transition={{duration:0.65}}
-    id='home'>
+    >
         <div className="logo-container">
-            <img src="/20231219_090517.png" alt="" className='logo-b' onClick={()=>{
+            <img src="/20231219_090517.png" alt="company_logo" className='logo' onClick={()=>{
                 navigate('/')
-              }} />
+            }}/>
         </div>
         <nav>
             <ul>
@@ -34,19 +35,19 @@ const Header = () => {
                     <span className='line'></span>
                 </li>
                 <li>
-                    <a href="/about">about</a>
+                    <Link to="/about">about</Link>
                     <span className='line'></span>
                 </li>
                 <li>
-                    <a href="/faq">faqs</a>
+                    <Link to="/faq">faqs</Link>
                     <span className='line'></span>
                 </li>
                 <li>
-                    <a href="/policy">policy</a>
+                    <Link to="/policy">our policy</Link>
                     <span className='line'></span>
                 </li>
                 <li>
-                    <a href="/buybitcoin">buy bitcoin</a>
+                    <Link to="/buybitcoin">buy bitcoin</Link>
                     <span className='line'></span>
                 </li>
             </ul>
@@ -54,6 +55,28 @@ const Header = () => {
         <div className="sign-up-btn-container">
             <button className='signup-btn' onClick={()=>{navigate('/login')}}>login</button>
         </div>
+        <div class="mobile-menu-container" onClick={()=>{
+            setShowModal(!showModal)
+          }} >  
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+          </div>
+          <div className={`overlay ${showModal ? 'showing-modal' : ''}`} onClick={() => {
+              setShowModal(false)
+          }}>
+                <div className={`menu-modal `} >
+                <ul>
+                    <Link to='/'>home</Link>
+                    <Link to='/about'>about</Link>
+                    <Link to='/faq'>faq</Link>
+                    <Link to='/buybitcoin'>buy bitcoin</Link>
+                    <Link to='/policy'>our policy</Link>
+                    <Link to='/signup'>signup</Link>
+                    <Link to='/login'>login</Link>
+                </ul>
+                </div>
+              </div>
     </motion.header>
   )
 }
