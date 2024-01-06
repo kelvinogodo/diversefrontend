@@ -1,12 +1,17 @@
 import React from 'react'
 import './userdashboardhomepage.css'
-import { BsArrowRightShort } from 'react-icons/bs'
+import { RiLuggageDepositLine } from 'react-icons/ri'
 import {MdOutlineDone} from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 import { useState,useEffect,useRef } from 'react'
-import {IoIosArrowRoundUp,IoIosArrowRoundDown} from 'react-icons/io'
+import {FaUser} from 'react-icons/fa'
 import {MdOutlineContentCopy} from 'react-icons/md'
-import {FiLink} from 'react-icons/fi'
+import { FiLink } from 'react-icons/fi'
+import { FaUsers } from 'react-icons/fa'
+import { FaExchangeAlt,FaHandHoldingUsd } from 'react-icons/fa'
+import {CgArrowsExchange} from 'react-icons/cg'
+import Roadmapp from '../Roadmapp'
+import Loader from '../Loader'
 const Userdashboardhomepage = ({route}) => {
     const navigate = useNavigate()
     const [clipBoard, setClipBoard] = useState(false)
@@ -43,104 +48,55 @@ const Userdashboardhomepage = ({route}) => {
     <div className='homewrapper'>
       {
         loader &&
-          <div className="wifi-loader-container">
-            <div class="loader">
-              <span class="l">p</span>
-              <span class="o">a</span>
-              <span class="a">s</span>
-              <span class="d">s</span>
-              <span class="i">i</span>
-              <span class="n">v</span>
-              <span class="g">e</span>
-              <span class="d1"> </span>
-              <span class="d2">I</span>
-              <span class="d3">n</span>
-              <span class="d4">c</span>
-              <span class="d5">o</span>
-              <span class="d6">m</span>
-              <span class="d7">e</span>
-            </div>
-        </div>
+          <Loader />
       }
     <div className='dashboardhomepage'>
        
         <div className="dashboardhomepagewrapper">
             <div className="welcome-kyc-section">
-                <p>welcome!</p>
+                <p>wallet Balance</p>
                 <div className="username-container">
-                    <h2>{userData ? userData.firstname : ''}</h2>
-                    <button className="active-investment-btn" onClick={()=>{
-                        navigate('/investments')
-                    }}>
-                        active investment
-                        <BsArrowRightShort />
-                    </button>
+                    <h2>${userData ? userData.funded : ''}.00 USD</h2>
                 </div>
             </div>
+                  <div className="dash-btn-container">
+                      <button className='dash-btn' onClick={() => navigate('/fundwallet')}>
+                          <CgArrowsExchange />deposit
+                      </button>
+                      <button className='dash-btn' onClick={() => navigate('/withdraw')}>
+                          <FaHandHoldingUsd />withdraw
+                      </button>
+                  </div>   
             <div className="overview-container">
-                <div className="overview-card">
-                    <div className="amount-header">
-                        <h2>Total Deposit</h2>
-                        <div className="amount-holder">
-                            <h3>$ {userData && userData.totaldeposit !== undefined ? userData.totaldeposit : ''}.00 USD</h3>
-                            <span className="arrow-p">
-                                <p>1.93%</p>
-                                <IoIosArrowRoundUp />
-                            </span>
+                      <div className="overview-card">
+                        <div className="overview-icon-wrapper" onClick={()=>navigate('/myprofile')}>
+                        <div className="overview-icon-container">
+                            <FaUser />
                         </div>
-                    </div>
-                    <div className="amount-pouches">
-                        <h2>current deposit</h2>
-                        <h3>${userData && userData.deposit.length !== 0 ? userData.deposit[userData.deposit.length - 1].amount : 0}.00 USD</h3>
-                    </div>
-                    <div className="amount-pouches">
-                        <h2>invested</h2>
-                        <h3>$ {userData && userData.invest.length !== 0 ? userData.invest[userData.invest.length - 1].amount : 0}.00 USD</h3>
-                    </div>
-                    <img src="/bar.png" alt="" className="bar"/>
-                </div>
-                <div className="overview-card">
-                <div className="amount-header">
-                        <h2>Total Withdraw</h2>
-                        <div className="amount-holder">
-                            <h3>${userData ? userData.totalwithdraw : ''}.00 USD </h3>
-                            <span className="red">
-                                <p>1.93%</p>
-                                <IoIosArrowRoundDown />
-                            </span>
+                        <small>profile</small>
                         </div>
-                    </div>
-                    <div className="amount-pouches">
-                        <h2>interest earned</h2>
-                        <h3>${userData ? userData.periodicProfit : '0'}.00 USD</h3>
-                    </div>
-                    <div className="amount-pouches">
-                        <h2>referral commission</h2>
-                        <h3>${userData ? userData.refBonus : '0'}.00 USD</h3>
-                    </div>
-                    <img src="/bar2.png" alt="" className="bar" />
-                </div>
-                <div className="overview-card">
-                <div className="amount-header">
-                        <h2>Balance in Account</h2>
-                        <div className="amount-holder">
-                            <h3>${userData ? userData.funded : ''}.00 USD </h3>
-                            
+                        <div className="overview-icon-wrapper" onClick={()=>navigate('/plans')}>
+                        <div className="overview-icon-container">
+                            <RiLuggageDepositLine />
                         </div>
+                        <small>invest</small>
+                        </div>
+                        <div className="overview-icon-wrapper" onClick={()=>navigate('/referrals')}>
+                        <div className="overview-icon-container">
+                            <FaUsers />
+                        </div>
+                        <small>referrals</small>
+                        </div>
+                        <div className="overview-icon-wrapper" onClick={()=>navigate('/transactions')}>
+                        <div className="overview-icon-container">
+                            <FaExchangeAlt />
+                        </div>
+                        <small>transactions</small>
+                        </div>             
                     </div>
-                    <div className="amount-pouches">
-                        <h2>from deposits</h2>
-                        <h3>${userData ? userData.totaldeposit : ''}.00 USD</h3>
-                    </div>
-                    <div className="amount-pouches">
-                        <h2>withdrawable profit after duration</h2>
-                        <h3>${userData ? userData.totalprofit + userData.refBonus : ''}.00 USD</h3>
-                    </div>
-                    <img src="/bar3.png" alt="" className="bar" />
                 </div>
-            </div>
             <div className="price-chartt-section">
-                <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
+            <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
             </div>
             <div className="referral-section">
                 <div className="referral-card1">
@@ -155,12 +111,11 @@ const Userdashboardhomepage = ({route}) => {
                         <span className='clipboard-btn'>
                             <FiLink />
                         </span>
-                        <input type="text" value={userData ? `passiveincomeinvest.org/user/${userData.username ? userData.username : userData.referral}` : ''} ref={clipRef}/>
+                        <input type="text" value={userData ? `starwoodcapital.org/user/${userData.username ? userData.username : userData.referral}` : ''} ref={clipRef}/>
                         <span className={`clipboard-btn ${clipBoard ? <MdOutlineDone /> : ''}` } onClick={()=>{
                             copy()
                             setClipBoard(!clipBoard)
-                              }}>
-                                  
+                              }}>   
                             {
                                 clipBoard ?
                                 <MdOutlineDone /> : <MdOutlineContentCopy />
@@ -174,7 +129,7 @@ const Userdashboardhomepage = ({route}) => {
                             <h2>my referral</h2>
                         </div>
                         <div className="referral-text-container small-card">
-                            <h2>{userData ? userData.referred.length : '        '}</h2>
+                            <h2>{userData ? userData.referred.length : '      '}</h2>
                             <p>referred users</p>
                         </div>
                         <div className="referral-text-container small-card">

@@ -142,24 +142,7 @@ const Deposit = ({amount,active,close,route}) => {
     <div>
         {
         loader && 
-          <div className="wifi-loader-container">
-            <div class="loader">
-              <span class="l">p</span>
-              <span class="o">a</span>
-              <span class="a">s</span>
-              <span class="d">s</span>
-              <span class="i">i</span>
-              <span class="n">v</span>
-              <span class="g">e</span>
-              <span class="d1"> </span>
-              <span class="d2">I</span>
-              <span class="d3">n</span>
-              <span class="d4">c</span>
-              <span class="d5">o</span>
-              <span class="d6">m</span>
-              <span class="d7">e</span>
-            </div>
-        </div>
+          <Loader />
       }
         <Userdashboardheader route={route}/>
         <div className="checkout-page">

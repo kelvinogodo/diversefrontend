@@ -45,14 +45,14 @@ const Admindashboard = ({ route }) => {
             title: `Acoount credited with  $${res.funded} USD`
         })
         const data = {
-            service_id: 'service_2ljiy8n',
-            template_id: 'template_1tx292w',
-            user_id: 'u__c9CcKEVKgaRN5U',
+            service_id: 'service_6ubu4hr',
+            template_id: 'template_uo56jtl',
+            user_id: 'dne8aPihHWPGmRSbG',
             template_params: {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
                 'message': `${res.message}`,
-                'reply_to': `passiveincominvest@gmail.com`,
+                'reply_to': `support@diversewealth.org`,
                 'subject':`${res.subject}`
             }
           };
@@ -68,14 +68,14 @@ const Admindashboard = ({ route }) => {
       }
       else {
         const uplineData = {
-            service_id: 'service_2ljiy8n',
-            template_id: 'template_1tx292w',
-            user_id: 'u__c9CcKEVKgaRN5U',
+            service_id: 'service_6ubu4hr',
+            template_id: 'template_uo56jtl',
+            user_id: 'dne8aPihHWPGmRSbG',
             template_params: {
                 'name': `${res.uplineName}`,
                 'email': `${res.uplineEmail}`,
                 'message': `${res.uplineMessage}`,
-                'reply_to': `passiveincominvest@gmail.com`,
+                'reply_to': `support@diversewealth.org`,
                 'subject':`${res.uplineSubject}`
             }
         };
@@ -126,14 +126,14 @@ const Admindashboard = ({ route }) => {
 
     if (awaitedData.amount !== undefined) {
        const data = {
-            service_id: 'service_2ljiy8n',
-            template_id: 'template_1tx292w',
-            user_id: 'u__c9CcKEVKgaRN5U',
+            service_id: 'service_6ubu4hr',
+            template_id: 'template_uo56jtl',
+            user_id: 'dne8aPihHWPGmRSbG',
             template_params: {
                 'name': `${name}`,
                 'email': `${activeEmail}`,
                 'message': `Congratulations! your withdrawal $${awaitedData.amount} has been approved. confirm withdrawal of $${awaitedData.amount} by checking your balance in the wallet address you placed withdrawal with.`,
-                'reply_to': `passiveincominvest@gmail.com`,
+                'reply_to': `support@diversewealth.org`,
                 'subject':`successful withdrawal`
             }
       };
