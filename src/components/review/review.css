@@ -1,0 +1,117 @@
+.review-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    padding: 40px 0px;
+}
+
+.review-card-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.review-card {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-green);
+    box-shadow: 0px 3px 40px #e5e9f3;
+}
+
+.review-card-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.review-card-img-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.review-card-rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.rate-icon-container {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.rate-icon-container svg {
+    color: goldenrod;
+}
+
+.investor-name {
+    text-transform: capitalize;
+    font-family: "lato";
+    font-size: .9rem;
+}
+
+.investor-review-container p {
+    font-family: "poppins";
+    font-size: .9rem;
+}
+
+.investor-review-container {
+    color: rgb(77, 77, 77);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-quote {
+    align-self: flex-start;
+    font-size: 2.1rem;
+    color: rgb(131, 131, 131);
+}
+
+.left-quote {
+    font-size: 2.1rem;
+    color: rgb(131, 131, 131);
+    align-self: flex-end;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .review-card-container {
+        flex-wrap: wrap;
+    }
+
+    .review-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-slide-content p {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .review-card-container {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 95%;
+        margin: 20px 0px;
+    }
+}

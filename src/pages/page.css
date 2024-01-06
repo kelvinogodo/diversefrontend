@@ -1,0 +1,645 @@
+.about-landpage,.gold-landpage,.real-landpage,.agrotech-landpage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../../public/pexels-tima-miroshnichenko-5439391.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    padding: 0px;
+}
+.gold-landpage{
+    background-image: url(../../public/pexels-michael-steinberg-366551.jpg);
+}
+.real-landpage{
+    background-image: url(../../public/pexels-sevenstorm-juhaszimrus-439416.jpg);
+}
+.agrotech-landpage{
+    background-image: url(../../public/Invest4Land-Agriculture-Real-Estate-Investment-Investing-Farmland-Farming-Agrobusiness-Investor-Property-Managed-Farmland-Turkey-Spain-Almond-Walnut0.jpg);
+}
+.gold-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 40px 60px 40px;
+    text-align: left;
+    background-color: white;
+    width: 100%;
+}
+.gold-text h2{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.gold-text h3, .gold-text h2{
+    text-align: left;
+    margin: 20px 0px;
+    width: 80%;
+}
+.gold-text p{
+    width: 80%;
+}
+.gold-text small{
+    width: 80%;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--dark-mild);
+}
+.widget-container, .tab-content{
+    padding-left: 10px;
+}
+.faq-landpage{
+    background-image: url(../../public/pexels-thirdman-7652051.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-page-text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.645);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-page-text h3{
+    font-size: 2.5rem;
+    color: white;
+}
+.distorted-card-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition:all 0.5s ease-out;
+    clip-path: polygon(59% 0, 100% 51%, 100% 100%, 0 100%, 0 0);
+    min-height: 300px;
+}
+.distorted-card-wrapper:hover{
+    background-color: white;
+    color: initial;
+}
+.distorted-card-wrapper h2{
+    font-size: 1rem;
+    text-transform: capitalize;
+    align-self: flex-start;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+.distorted-card-wrapper h3{
+    font-size: .9rem;
+    align-self: flex-start;
+    font-family: 'Montserrat';
+    text-transform: capitalize;
+    margin: 2px 0px;
+    color: var(--secondary-color);
+}
+.distorted-line{
+    align-self: flex-start;
+    width: 80px;
+    height: 2px;
+    background-color: var(--dark);
+    margin: 8px 0px;
+}
+.distort-container:hover h2{
+    color: var(--dark);
+}
+.distort-container:hover span{
+    color: white;
+}
+.distort-container:hover p{
+    color:  var(--dark-mild);
+}
+.distort-container{
+    padding: 0px;
+    background-color: #f1f1f1;
+}
+.distort-container:hover{
+    background-color: var(--dark-mild);
+    transition: all .2s ease-in-out;
+}
+.distort-container:hover .counter-distorted svg{
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.counter-distorted{
+    top: 8px;
+}
+.counter-distorted svg{
+    font-size: 2.5rem;
+    color: rgb(92, 92, 92);
+}
+.widget-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    flex-direction: column;
+}
+.widget-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-start;
+    /* background-color: red; */
+}
+.widget-tab p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--secondary-color);
+    cursor: pointer;
+    align-self: flex-start;
+}
+.show-line{
+    transition:all .2s ease-in-out;
+}
+.widget-line{
+    align-self: flex-start;
+    display: block;
+    height: 1.5px;
+    background-color: #ccd2dde5;
+    width: 100%;
+    margin-top: 5px;
+}
+.show-line p{
+    color: var(--color-variant);
+}
+.show-line .widget-line{
+    background-color: var(--color-variant);
+}
+.bitcoin-card-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.bitcoin-card{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+    padding: 10px 30px;
+}
+.bitcoin-card-text-container{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 10px 10px;
+}
+.bitcoin-card-text-container h2{
+    align-self: flex-start;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.bitcoin-card-text-container p{
+    margin: 15px 0px 40px 0px;
+    text-align: left;
+}
+.flipped{
+    flex-direction: row-reverse;
+}
+.bitcoin-img{
+    width: 50%;
+    height: 340px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.learn-more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    align-self: flex-start;
+   }
+   .bitcoin-card-text-container a{
+    align-self: flex-start;
+   }
+   .learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   .learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   .learn-more .circle .icont {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   .learn-more .circle .icont.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   .learn-more .circle .icont.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   .learn-more:hover .circle {
+    width: 100%;
+   }
+   
+   .learn-more:hover .circle .icont.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   .learn-more:hover .button-text {
+    color: #fff;
+   }
+  
+   .policy-container{
+    background-color: white;
+    text-align: left;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   }
+   .policy-text-container{
+    width: 85%;
+    text-align: left;
+    padding: 10px;
+   }
+   .policy-text-container h2{
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 3rem;
+   }
+   .policy-text-container h3{
+    color: var(--color-variant);
+    margin: 20px 0px;
+   }
+   .policy-lanpage{
+    background-image: url(../../public/pexels-mikhail-nilov-7734569.jpg);
+   }
+   .bitcoin-lanpage{
+    background-image: url(../../public/How-Citizenship-by-Investment-Unlocks-the-Potential-of-Cryptocurrency.webp);
+   }
+   .signup-logo{
+        height: 120px;
+        object-fit: contain;
+        width: 50%;
+        margin: auto;
+   }
+   .form {
+       display: flex;
+       flex-direction: column;
+       gap: 12px;
+       width: 40%;
+       background-color: #fff;
+       border-radius: 20px;
+       padding: 50px 40px;
+       box-shadow: 0px 3px 40px #e5e9f3;
+       margin:auto;
+   }
+
+   .title {
+       color: var(--facebook-variant);
+       text-align: center;
+       font-size: 1.2rem;
+       margin-bottom: 10px;
+       font-family: 'Poppins';
+       text-transform: capitalize;
+       width: 100%;
+   }
+
+   .sub {
+       text-align: center;
+       color: var(--dark);
+       font-size: small;
+       width: 80%;
+       margin: auto;
+   }
+
+   .sub.mb {
+       margin-bottom: 1px;
+   }
+
+   .sub a {
+       color: var(--color-variant);
+   }
+   .form .input{
+    border: 1px solid white;
+    transition: 1s all ease-in-out;
+   }
+   .form .input::placeholder{
+        font-family: 'Poppins';
+        text-transform: capitalize;
+        font-size: small;
+   }
+   .form button {
+       align-self: flex-end;
+       cursor: pointer;
+   }
+    .option:hover{
+    background-color: #ddd !important;
+    padding: 5px !important;
+    cursor: pointer;
+   }
+   .form .input,
+   button {
+       border: none;
+       outline: none;
+       width: 100%;
+       color: var(--dark-mild);
+       padding: 16px 12px;
+       background-color: rgb(244, 244, 244);
+       border-radius: 10px;
+   }
+
+   button {
+       margin-top: 12px;
+       background-color: var(--color-variant);
+       color: #fff;
+       text-transform: uppercase;
+       font-weight: bold;
+   }
+
+   .input:focus {
+       border: 1px solid rgb(23, 111, 211);
+   }
+   .form_container {
+       width: fit-content;
+       height: fit-content;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 15px;
+       padding: 50px 40px 20px 40px;
+       background-color: #ffffff;
+       box-shadow: 0px 3px 100px #e5e9f3;
+       border-radius: 11px;
+       font-family: "Inter", sans-serif;
+   }
+
+   .logo_container {
+       box-sizing: border-box;
+       /* width: 120px; */
+       height: 80px;
+       background: linear-gradient(180deg, rgba(248, 248, 248, 0) 50%, #F8F8F888 100%);
+       border: 1px solid #F7F7F8;
+       filter: drop-shadow(0px 0.5px 0.5px #EFEFEF) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+       border-radius: 11px;
+   }
+   .logo_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   }
+   .title_container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+   }
+
+   .titles {
+       margin: 0;
+       font-size: 1.25rem;
+       font-weight: 700;
+       color: var(--color-variant);
+       font-family: inherit;
+   }
+
+   .subtitle {
+       font-size: 0.725rem;
+       max-width: 80%;
+       text-align: center;
+       line-height: 1.1rem;
+       color: #8B8E98;
+       margin:auto;
+   }
+
+   .input_containers {
+       width: 100%;
+       height: fit-content;
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       gap: 5px;
+   }
+
+   .icont {
+       width: 20px;
+       position: absolute;
+       z-index: 99;
+       left: 12px;
+       bottom: 9px;
+   }
+
+   .input_labels {
+       font-size: 0.75rem;
+       color: var(--facebook-variant);
+       font-weight: 600;
+       margin-right: auto;
+   }
+
+   .input_field {
+       width: auto;
+       height: 40px;
+       padding: 5px 0 5px 40px;
+       border-radius: 7px;
+       outline: none;
+       border: 1px solid #e5e5e5;
+       filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+       transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+       position: relative;
+   }
+
+   .input_field:focus {
+       border: 1px solid transparent;
+       box-shadow: 0px 0px 0px 2px var(--facebook-variant);
+       background-color: transparent;
+   }
+
+   .sign-in_btn {
+       width: 100%;
+       height: 40px;
+       border: 0;
+       background: var(--color-variant);
+       border-radius: 7px;
+       outline: none;
+       color: #ffffff;
+       cursor: pointer;
+   }
+
+   .sign-in_ggl {
+       width: 100%;
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+       background: #ffffff;
+       border-radius: 7px;
+       outline: none;
+       color: #242424;
+       border: 1px solid #e5e5e5;
+       filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+       cursor: pointer;
+   }
+
+   .sign-in_apl {
+       width: 100%;
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+       background: #212121;
+       border-radius: 7px;
+       outline: none;
+       color: #ffffff;
+       border: 1px solid #e5e5e5;
+       filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+       cursor: pointer;
+   }
+
+   .separator {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 30px;
+       color: #8B8E98;
+   }
+
+   .separator .line {
+       display: block;
+       width: 100%;
+       height: 1px;
+       border: 0;
+       background-color: #e8e8e8;
+   }
+
+   .note {
+       font-size: 0.75rem;
+       color: #8B8E98;
+       text-decoration: underline;
+   }
+   .login-page{
+    background-color: var(--color-mild);
+   }
+   @media (max-width: 990px) and (min-width: 768px){
+    .widget-container{
+        width: 100%;
+    }
+    .form {
+        width: 60%;
+    }
+   }
+   @media screen and (max-width: 767px){
+    .gold-text{
+        width: 100%;
+    }
+    .gold-text h2, .gold-text p, .gold-text h3, .gold-text small{
+        width: 100%;
+    }
+    .gold-text h2{
+        font-size: 1.3rem;
+    }
+    .gold-text h3{
+        font-size: 1.2rem;
+    }
+    .widget-container{
+        width: 100%;
+    }
+    .bitcoin-card-text-container{
+        width: 100%;
+    }
+    .bitcoin-img{
+        width: 100%;
+    }
+    .bitcoin-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-landpage{
+        height: 400px;
+    }
+    .widget-container p{
+        font-size: .9rem;
+    }
+    .asset-content{
+        margin-top: 10px;
+    }
+    .about-page-text h3{
+        font-size: 2rem;
+    }
+    .form {
+        width: 100%;
+    }
+   }
