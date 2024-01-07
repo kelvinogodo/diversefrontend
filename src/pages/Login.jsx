@@ -113,7 +113,7 @@ const Login = ({route}) => {
                     login()
                     }}>
           <div class="logo_container" onClick={()=>navigate('/')}>
-            <img src="/20231219_091205.png" alt="" />
+            <img src="/20231219_090754.png" alt="" />
           </div>
           <div class="title_container">
             <p class="titles">Login to your Account</p>

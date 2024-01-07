@@ -291,11 +291,11 @@ const Admindashboard = ({ route }) => {
                     login()
                     }}>
           <div class="logo_container" onClick={()=>navigate('/')}>
-            <img src="/20230607_222354.png" alt="" />
+            <img src="/20231219_090754.png" alt="" />
           </div>
           <div class="title_container">
             <p class="titles">welcome admin</p>
-             <span class="subtitle">Welcome to passive income invest, login and enjoy the best investment experience.</span>
+             <span class="subtitle">Welcome to Diversewealth, login and enjoy the best investment experience.</span>
           </div>
           <br/>
           <div class="input_containers">

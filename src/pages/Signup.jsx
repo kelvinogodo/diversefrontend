@@ -390,7 +390,7 @@ const Signup = ({route}) => {
                       e.preventDefault()
                       Signup()
         }} >
-          <img src="/20231219_091205.png" alt="" className="signup-logo" onClick={()=>{
+          <img src="/20231219_090754.png" alt="" className="signup-logo" onClick={()=>{
               navigate('/')
             }}/>
               <span class="subtitle">Get started with passive income invest, just create an account and enjoy the experience.</span>
