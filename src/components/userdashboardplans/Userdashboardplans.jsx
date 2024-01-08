@@ -372,7 +372,7 @@ const Userdashboardplans = ({route}) => {
             <button className="history-btn" onClick={()=>{
               navigate('/investments')
             }}>
-              withdrawal history
+              investment history
               <FiArrowRight />
             </button>
         </div>
