@@ -87,6 +87,16 @@ const Userdashboardplans = ({route}) => {
         percent:'18%',
         duration:'12 days'
       },
+      {
+        id:7,
+        min:200,
+        max:10000,
+        image:'/tron.png',
+        method:'tether(TRC20)',
+        type:'Loan',
+        percent:'5%',
+        duration:'6 months'
+      },
   ])
   
 
