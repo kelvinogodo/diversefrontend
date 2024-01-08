@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import { Pagination, Navigation ,FreeMode} from "swiper";
+import Loader from '../Loader';
 const Userdashboardplans = ({route}) => {
   const [showModal,setShowModal] =useState(false)
   const [activeMethod, setActiveMethod] = useState()
@@ -156,24 +157,7 @@ const Userdashboardplans = ({route}) => {
       <div>
       {
           loader && 
-            <div className="wifi-loader-container">
-              <div class="loader">
-              <span class="l">p</span>
-              <span class="o">a</span>
-              <span class="a">s</span>
-              <span class="d">s</span>
-              <span class="i">i</span>
-              <span class="n">v</span>
-              <span class="g">e</span>
-              <span class="d1"> </span>
-              <span class="d2">I</span>
-              <span class="d2">n</span>
-              <span class="d2">c</span>
-              <span class="d2">o</span>
-              <span class="d2">m</span>
-              <span class="d2">e</span>
-            </div>
-          </div>
+            <Loader />
         }
           {
             showModal &&
