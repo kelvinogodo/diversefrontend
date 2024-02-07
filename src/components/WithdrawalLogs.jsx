@@ -70,7 +70,7 @@ const WithdrawalLogs = ({route}) => {
                     <td>$ {refer.amount} USD</td>
                     <td>{refer.id} </td>
                     <td>$ {refer.balance} USD</td>
-                    <td>pending</td>
+                    <td>approved</td>
                   </tr>
                 )
               }
