@@ -40,7 +40,7 @@ const Policy = () => {
               Contact Information
               </h3>
               <p>
-              Trade Volte is glad to receive your comments concerning this "Privacy Policy". In case you think that Trade Volte does not follow the rules and violate this Statement, contact us at support@seatradingltd.com We guarantee that we will take commercially reasonable efforts to discover and solve the problem.
+              Diversewealth is glad to receive your comments concerning this "Privacy Policy". In case you think that Diversewealth does not follow the rules and violate this Statement, contact us at support@diversewealth.org We guarantee that we will take commercially reasonable efforts to discover and solve the problem.
               </p>
             </div>
       </div>
