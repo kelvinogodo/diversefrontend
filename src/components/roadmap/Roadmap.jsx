@@ -11,7 +11,7 @@ const Roadmap = () => {
                 <span className="header-line"></span>
                 <h2>our history</h2>
             </div>
-            <h1 data-aos="fade-up">brief histofy of Diversewealth</h1>
+            <h1 data-aos="fade-up">brief history of Diversewealth</h1>
             <p data-aos="fade-up">here is a brief history of our company</p>
         </div>
         <div className="why-choose-us-card-container">
